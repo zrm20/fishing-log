@@ -1,0 +1,11 @@
+---
+description: Docs folder is authoritative; document features before coding
+alwaysApply: true
+---
+
+# Documentation as single source of truth
+
+- Treat **`docs/`** as the **authoritative** description of product intent, architecture, and decisions.
+- **Before implementing** a new feature, update or add the relevant documentation (e.g. `docs/product.md`, `docs/architecture.md`, or a focused doc under `docs/`) so scope and behavior are clear.
+- When a feature **changes**, update the same docs in the same change (or immediately before/after in a tight sequence).
+- **Conflict resolution:** If code and docs disagree, **the docs are correct** until the docs are deliberately updated. Do not “fix” documentation drift by silently changing behavior to match old code—align code to docs, or propose a doc change and get it accepted first.

@@ -1,0 +1,14 @@
+---
+description: Require ADR and approval before adding packages or dependencies
+alwaysApply: true
+---
+
+# Dependencies and decisions
+
+- **Do not add packages** (npm/pnpm/yarn, CocoaPods, Gradle dependencies, etc.) until:
+  1. A **decision document** exists under `docs/decisions/` describing the choice (what, why, alternatives considered).
+  2. That decision is **explicitly approved** by the project owner / maintainer (not assumed from chat).
+
+- If work needs a library that has no ADR yet, **stop and propose** the ADR text and wait for approval rather than adding it preemptively.
+
+- Internal workspace packages in this monorepo follow the same spirit: new packages need a recorded decision and approval before creation.

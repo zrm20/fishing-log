@@ -1,0 +1,14 @@
+---
+description: Test-driven development and testing pyramid
+alwaysApply: true
+---
+
+# Testing and TDD
+
+- **Practice test-driven development** where practical: express behavior with a failing test first, then implement until it passes, then refactor.
+- Follow the **testing pyramid**:
+  - **Many unit tests** — fast, isolated, cheap; default for business logic and pure functions.
+  - **Some integration tests** — boundaries between modules, DB, HTTP handlers, etc.; fewer than unit tests but meaningful coverage.
+  - **Few end-to-end tests** — high-value critical paths only (e.g. core user flows); keep them stable and slow-running-friendly.
+
+- Do not skip tests for new behavior without an explicit, documented exception (and prefer documenting that exception in `docs/` or an ADR).

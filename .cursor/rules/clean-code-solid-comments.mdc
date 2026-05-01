@@ -1,0 +1,25 @@
+---
+description: Clean code, SOLID, doc alignment, and minimal explanatory comments
+alwaysApply: true
+---
+
+# Clean code, SOLID, and comments
+
+## Practices
+
+- Apply **clean code** habits: clear names, small functions, single responsibility, shallow nesting, meaningful structure.
+- Follow **SOLID** principles when designing modules and types (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion).
+- **Prefer documentation guidelines** in `docs/` and established project patterns over inventing one-off approaches.
+
+## When you diverge
+
+If you **must** stray from documented guidelines or widely accepted best practices (deadline, platform constraint, interim workaround):
+
+- Add a **short comment** at the divergence explaining **why**, what tradeoff was accepted, and ideally what should happen later (e.g. remove after ADR X).
+- Prefer fixing docs or the ADR if the exception is permanent.
+
+## Comments in code
+
+- **Well-written code should explain itself** through naming and structure.
+- **Do not** comment what the code literally does when that is already obvious.
+- **Do** use comments when intent, constraints, or non-obvious invariants would otherwise be lost—including the cases above where behavior intentionally differs from docs or norms.

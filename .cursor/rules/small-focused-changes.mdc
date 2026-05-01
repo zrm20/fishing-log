@@ -1,0 +1,10 @@
+---
+description: Prefer small, focused edits over large sweeping changes
+alwaysApply: true
+---
+
+# Change size
+
+- **Prefer small, focused changes** that solve one problem or deliver one slice of value.
+- Avoid drive-by refactors, broad renames, or mixing unrelated fixes in one PR unless explicitly requested.
+- When a large effort is needed, **split** it into reviewable steps (docs → ADR → incremental implementation) rather than one huge diff.
