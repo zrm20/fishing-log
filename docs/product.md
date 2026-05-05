@@ -12,7 +12,7 @@ The first real user may be the maintainer (**dogfood**), but the product is **mu
 
 - **Authentication upfront** — auth is included from early delivery; delaying it is avoided because retrofitting tenancy and sessions is disproportionately painful.
 - **Offline first everywhere** — not only logging: **every product feature**, including **pre-trip briefings** and reviewing history, must be usable **without network** whenever the relevant data is already on the device. The server exists to unify data across devices—not to gate routine use behind connectivity.
-- **Online sync for continuity** — signed-in users need **consistent history across devices**, via background or explicit sync—not “this phone only.” The backend’s primary responsibility is enabling that continuity (see architecture). Conflict handling and scheduling belong in architecture and ADRs.
+- **Online sync for continuity** — signed-in users need **consistent history across devices**, via background or explicit sync—not “this phone only.” The backend’s primary responsibility is enabling that continuity (see **[architecture.md](architecture.md)**). Conflict handling and scheduling belong in **architecture** and **[ADRs](decisions/README.md)**.
 
 ## Core entities (draft)
 
@@ -32,3 +32,7 @@ The first real user may be the maintainer (**dogfood**), but the product is **mu
 ## Non-goals (TBD)
 
 List what this product explicitly will not do in v1.
+
+## Related technical documentation
+
+System shape (client vs API, offline constraints) and recorded stack choices live in **[architecture.md](architecture.md)**; technical decisions (**ADR-0001** onward) are indexed in **[decisions/README.md](decisions/README.md)**.

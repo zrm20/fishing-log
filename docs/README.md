@@ -11,6 +11,8 @@ This folder is the **single source of truth** for product intent, architecture, 
 | [architecture.md](architecture.md) | In progress — client owns features offline-first; backend for auth + continuity; sync protocol TBD |
 | [decisions/](decisions/README.md) | Active — record ADRs as choices are made |
 
+**Baseline implementation stack** (accepted to date): **ADR-0001**–**ADR-0006** (TypeScript monorepo, pnpm, Expo/React Native UI and state tooling, shared Zod package)—summarized with links under [architecture.md](architecture.md).
+
 ## How to use this with agents
 
 Repo root **[AGENTS.md](../AGENTS.md)** summarizes where policies live (`docs/`, `docs/decisions/`, `.cursor/rules/`) so any tool—not only Cursor—can be aimed at the same sources.

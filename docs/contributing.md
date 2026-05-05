@@ -5,7 +5,7 @@ For **people** contributing to Fishing Log—not a second copy of agent policy.
 ## Where truth lives
 
 - **`docs/`** — product intent, architecture, and how the software should behave. Update these when behavior or scope changes; see [README.md](README.md) for the index.
-- **`docs/decisions/`** — ADRs for meaningful technical choices (**including new dependencies**).
+- **`docs/decisions/`** — ADRs for meaningful technical choices (**including new dependencies**), indexed in **[decisions/README.md](decisions/README.md)**.
 
 **Coding habits** (documentation workflow, SOLID/comments, testing pyramid, PR size): live in repo **[`.cursor/rules/`](../.cursor/rules/)**. Those rules are enforced for Cursor agents here; humans should skim the same files so reviews stay aligned—**do not expect this page to duplicate their text**, or it will fall out of date.
 

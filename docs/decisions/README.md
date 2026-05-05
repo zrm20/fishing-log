@@ -23,5 +23,11 @@ Examples: `0001-monorepo-tooling.md`, `0002-api-framework.md`.
 | ADR | Title | Status |
 |-----|-------|--------|
 | [0000-record-architecture-decisions.md](0000-record-architecture-decisions.md) | Record architecture decisions | Accepted |
+| [0001-typescript-full-stack-monorepo.md](0001-typescript-full-stack-monorepo.md) | TypeScript full stack in a monorepo | Accepted |
+| [0002-pnpm-workspaces.md](0002-pnpm-workspaces.md) | pnpm workspaces (no Turborepo yet) | Accepted |
+| [0003-expo-react-native.md](0003-expo-react-native.md) | Expo for the React Native client | Accepted |
+| [0004-ui-nativewind-react-native-reusables.md](0004-ui-nativewind-react-native-reusables.md) | NativeWind and React Native Reusables for UI | Accepted |
+| [0005-client-state-react-hooks.md](0005-client-state-react-hooks.md) | TanStack Query for server state; React hooks for client UI; global store deferred | Accepted |
+| [0006-shared-package-zod-schemas.md](0006-shared-package-zod-schemas.md) | Shared workspace package for Zod schemas and types | Accepted |
 
 Add a row to this table whenever you add a new ADR.

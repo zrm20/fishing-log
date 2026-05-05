@@ -1,30 +1,45 @@
-# ADR Format
+# ADR format (skill helper)
 
-ADRs live in `docs/adr/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
+In **Fishing Log**, ADRs live in **`docs/decisions/`** and are indexed in **[`docs/decisions/README.md`](../../../docs/decisions/README.md)**. Use sequential numbering and kebab-case slugs: `0001-short-title.md`, `0002-other-title.md`, etc.
 
-Create the `docs/adr/` directory lazily — only when the first ADR is needed.
+The folder already exists in this repo; in a greenfield repo, create **`docs/decisions/`** when the first ADR is needed.
 
-## Template
+**Canonical structure** for new ADRs here: **Status**, **Context**, **Decision**, **Consequences** — see the index README and existing files (for example [ADR-0000](../../../docs/decisions/0000-record-architecture-decisions.md)).
+
+## Minimal template (when a one-paragraph record is enough)
 
 ```md
-# {Short title of the decision}
+# ADR-NNNN: {Short title}
 
-{1-3 sentences: what's the context, what did we decide, and why.}
+## Status
+
+Accepted
+
+## Context
+
+{What forced the choice.}
+
+## Decision
+
+{What we decided and why.}
+
+## Consequences
+
+{Tradeoffs and follow-ups, or "none yet."}
 ```
 
-That's it. An ADR can be a single paragraph. The value is in recording *that* a decision was made and *why* — not in filling out sections.
+Shorter prose-only ADRs may still appear in other ecosystems; this repo prefers the sections above.
 
-## Optional sections
+## Optional extras
 
-Only include these when they add genuine value. Most ADRs won't need them.
+Include only when they add genuine value:
 
-- **Status** frontmatter (`proposed | accepted | deprecated | superseded by ADR-NNNN`) — useful when decisions are revisited
-- **Considered Options** — only when the rejected alternatives are worth remembering
-- **Consequences** — only when non-obvious downstream effects need to be called out
+- **Considered options** — when rejected alternatives matter later
+- **Superseded by ADR-NNNN** — in Status when replaced
 
 ## Numbering
 
-Scan `docs/adr/` for the highest existing number and increment by one.
+Scan **`docs/decisions/`** for the highest existing `NNNN` and increment by one. Update **`docs/decisions/README.md`** with a new index row whenever you add an ADR.
 
 ## When to offer an ADR
 
