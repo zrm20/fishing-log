@@ -25,3 +25,9 @@ Skills under **[`.agents/skills/`](../.agents/skills/)** help with tasks like st
 ## Contributing doc scope
 
 Add **human-oriented** conventions here once they exist—for example repo layout, branch strategy, CI, licensing—rather than transcribing Cursor rule bodies into prose.
+
+## Workspace layout
+
+- **Install:** from the repo root, run `pnpm install` (use **pnpm** with **Corepack**: `corepack enable`; the root `packageManager` field pins the pnpm version).
+- **Packages:** runnable apps live under **`apps/`** (`@fishing-log/mobile`, `@fishing-log/api`); libraries under **`packages/`** (`@fishing-log/shared` for cross-boundary Zod contracts).
+- **Checks:** `pnpm run build` compiles shared + API stubs; `pnpm run typecheck` runs TypeScript across workspaces (shared is built first so `.d.ts` consumers resolve).

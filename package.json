@@ -1,0 +1,12 @@
+{
+  "name": "fishing-log",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm --filter @fishing-log/shared build && pnpm --filter @fishing-log/api build",
+    "typecheck": "pnpm --filter @fishing-log/shared build && pnpm -r run typecheck"
+  }
+}

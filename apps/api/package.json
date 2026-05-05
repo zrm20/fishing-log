@@ -1,0 +1,16 @@
+{
+  "name": "@fishing-log/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @fishing-log/shared build && tsc -p tsconfig.build.json",
+    "typecheck": "pnpm --filter @fishing-log/shared build && tsc -p tsconfig.build.json --noEmit"
+  },
+  "dependencies": {
+    "@fishing-log/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
